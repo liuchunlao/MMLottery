@@ -26,28 +26,19 @@
     
     // 2.2 加载标签控制器的子控制器
     // 大厅
-    // 加载文件
-    UIStoryboard *hallBoard = [UIStoryboard storyboardWithName:@"MMHall" bundle:nil];
-    // 实例化控制器
-    UINavigationController *navHall = [hallBoard instantiateInitialViewController];
+    UINavigationController *navHall = [self navWithStoryboardName:@"MMHall"];
     
     // 竞技场
-    // 加载文件
-    UIStoryboard *arenaBoard = [UIStoryboard storyboardWithName:@"MMArena" bundle:nil];
-    // 实例化控制器
-    UINavigationController *navArena = [arenaBoard instantiateInitialViewController];
+    UINavigationController *navArena = [self navWithStoryboardName:@"MMArena"];
     
     // 发现
-    UIStoryboard *discoveryBoard = [UIStoryboard storyboardWithName:@"MMDiscovery" bundle:nil];
-    UINavigationController *navDiscovery = [discoveryBoard instantiateInitialViewController];
+    UINavigationController *navDiscovery = [self navWithStoryboardName:@"MMDiscovery"];
     
     // 历史信息
-    UIStoryboard *historyBoard = [UIStoryboard storyboardWithName:@"MMHistory" bundle:nil];
-    UINavigationController *navHistory = [historyBoard instantiateInitialViewController];
+    UINavigationController *navHistory = [self navWithStoryboardName:@"MMHistory"];
     
     // 我的彩票
-    UIStoryboard *myLotteryBoard = [UIStoryboard storyboardWithName:@"MMMyLottery" bundle:nil];
-    UINavigationController *navMyLottery = [myLotteryBoard instantiateInitialViewController];
+    UINavigationController *navMyLottery = [self navWithStoryboardName:@"MMMyLottery"];
     
     tabBarVc.viewControllers = @[navHall, navArena, navDiscovery, navHistory, navMyLottery];
     
@@ -61,9 +52,18 @@
     return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+#pragma mark - 根据传入的故事板文件，创建并返回对应的导航控制器
+- (UINavigationController *)navWithStoryboardName:(NSString *)storyboardName {
+    
+    // 1.根据名称加载故事板文件
+    UIStoryboard *board = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+    
+    // 2.实例化文件中的初始化控制器【即带箭头的导航控制器】
+    UINavigationController *nav = [board instantiateInitialViewController];
+    
+    // 3.返回
+    return nav;
+    
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
