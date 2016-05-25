@@ -62,6 +62,7 @@
 // MARK: - 6.实现协议方法
 - (void)bottomView:(MMBottomView *)bottomView didSelectIndex:(NSUInteger)selIdx {
     
+    // 切换标签vc选中的索引，实现切换选中控制器的目的
     self.selectedIndex = selIdx;
 
 }
