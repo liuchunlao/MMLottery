@@ -18,6 +18,7 @@
 		D95F71ED1CF5F4B800ACB538 /* MMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D95F71EC1CF5F4B800ACB538 /* MMNavigationController.m */; };
 		D95F71F01CF5F56600ACB538 /* MMBottomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D95F71EF1CF5F56600ACB538 /* MMBottomButton.m */; };
 		D95F71F31CF5FE5C00ACB538 /* MMHallController.m in Sources */ = {isa = PBXBuildFile; fileRef = D95F71F21CF5FE5C00ACB538 /* MMHallController.m */; };
+		D95F71F71CF6003100ACB538 /* UIView+MDRExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D95F71F61CF6003100ACB538 /* UIView+MDRExtension.m */; };
 		D9D95CC91CF5CCF700BCE8DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D95CC81CF5CCF700BCE8DD /* main.m */; };
 		D9D95CD41CF5CCF700BCE8DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D95CD31CF5CCF700BCE8DD /* Assets.xcassets */; };
 		D9D95CD71CF5CCF700BCE8DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D95CD51CF5CCF700BCE8DD /* LaunchScreen.storyboard */; };
@@ -42,6 +43,8 @@
 		D95F71EF1CF5F56600ACB538 /* MMBottomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBottomButton.m; sourceTree = "<group>"; };
 		D95F71F11CF5FE5C00ACB538 /* MMHallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHallController.h; sourceTree = "<group>"; };
 		D95F71F21CF5FE5C00ACB538 /* MMHallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHallController.m; sourceTree = "<group>"; };
+		D95F71F51CF6003100ACB538 /* UIView+MDRExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MDRExtension.h"; sourceTree = "<group>"; };
+		D95F71F61CF6003100ACB538 /* UIView+MDRExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MDRExtension.m"; sourceTree = "<group>"; };
 		D9D95CC41CF5CCF700BCE8DD /* shczLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shczLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D95CC81CF5CCF700BCE8DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9D95CD31CF5CCF700BCE8DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -278,6 +281,7 @@
 		D95F71CD1CF5D0B600ACB538 /* Main[主体] */ = {
 			isa = PBXGroup;
 			children = (
+				D95F71F41CF6003100ACB538 /* Category */,
 				D95F71CE1CF5D0B600ACB538 /* Controllers */,
 				D95F71CF1CF5D0B600ACB538 /* Models */,
 				D95F71D01CF5D0B600ACB538 /* Others */,
@@ -362,6 +366,15 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D95F71F41CF6003100ACB538 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D95F71F51CF6003100ACB538 /* UIView+MDRExtension.h */,
+				D95F71F61CF6003100ACB538 /* UIView+MDRExtension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		D9D95CBB1CF5CCF700BCE8DD = {
@@ -480,6 +493,7 @@
 				D95F71F31CF5FE5C00ACB538 /* MMHallController.m in Sources */,
 				D9D95CC91CF5CCF700BCE8DD /* main.m in Sources */,
 				D95F71ED1CF5F4B800ACB538 /* MMNavigationController.m in Sources */,
+				D95F71F71CF6003100ACB538 /* UIView+MDRExtension.m in Sources */,
 				D95F71E71CF5E54900ACB538 /* MMTabBarController.m in Sources */,
 				D95F71D91CF5D0B600ACB538 /* AppDelegate.m in Sources */,
 				D95F71EA1CF5E7B600ACB538 /* MMBottomView.m in Sources */,
