@@ -21,8 +21,35 @@
     // 1.创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    // 2.创建标签控制器
+    // 2.1 创建标签控制器
     UITabBarController *tabBarVc = [[UITabBarController alloc] init];
+    
+    // 2.2 加载标签控制器的子控制器
+    // 大厅
+    // 加载文件
+    UIStoryboard *hallBoard = [UIStoryboard storyboardWithName:@"MMHall" bundle:nil];
+    // 实例化控制器
+    UINavigationController *navHall = [hallBoard instantiateInitialViewController];
+    
+    // 竞技场
+    // 加载文件
+    UIStoryboard *arenaBoard = [UIStoryboard storyboardWithName:@"MMArena" bundle:nil];
+    // 实例化控制器
+    UINavigationController *navArena = [arenaBoard instantiateInitialViewController];
+    
+    // 发现
+    UIStoryboard *discoveryBoard = [UIStoryboard storyboardWithName:@"MMDiscovery" bundle:nil];
+    UINavigationController *navDiscovery = [discoveryBoard instantiateInitialViewController];
+    
+    // 历史信息
+    UIStoryboard *historyBoard = [UIStoryboard storyboardWithName:@"MMHistory" bundle:nil];
+    UINavigationController *navHistory = [historyBoard instantiateInitialViewController];
+    
+    // 我的彩票
+    UIStoryboard *myLotteryBoard = [UIStoryboard storyboardWithName:@"MMMyLottery" bundle:nil];
+    UINavigationController *navMyLottery = [myLotteryBoard instantiateInitialViewController];
+    
+    tabBarVc.viewControllers = @[navHall, navArena, navDiscovery, navHistory, navMyLottery];
     
     // 3.将标签vc设置为窗口的子控制器
     self.window.rootViewController = tabBarVc;
