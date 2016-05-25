@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D95F71D91CF5D0B600ACB538 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D95F71D21CF5D0B600ACB538 /* AppDelegate.m */; };
 		D9D95CC91CF5CCF700BCE8DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D95CC81CF5CCF700BCE8DD /* main.m */; };
-		D9D95CCC1CF5CCF700BCE8DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D95CCB1CF5CCF700BCE8DD /* AppDelegate.m */; };
 		D9D95CD41CF5CCF700BCE8DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D95CD31CF5CCF700BCE8DD /* Assets.xcassets */; };
 		D9D95CD71CF5CCF700BCE8DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D95CD51CF5CCF700BCE8DD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D95F71D11CF5D0B600ACB538 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D95F71D21CF5D0B600ACB538 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D9D95CC41CF5CCF700BCE8DD /* shczLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shczLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D95CC81CF5CCF700BCE8DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D9D95CCA1CF5CCF700BCE8DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D9D95CCB1CF5CCF700BCE8DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D9D95CD31CF5CCF700BCE8DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9D95CD61CF5CCF700BCE8DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9D95CD81CF5CCF700BCE8DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +34,295 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D95F71B31CF5D0B600ACB538 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D95F71B41CF5D0B600ACB538 /* Arena[竞技场] */,
+				D95F71B91CF5D0B600ACB538 /* Discovery[发现] */,
+				D95F71BE1CF5D0B600ACB538 /* Guide[新特性] */,
+				D95F71C31CF5D0B600ACB538 /* Hall[大厅] */,
+				D95F71C81CF5D0B600ACB538 /* History[历史] */,
+				D95F71CD1CF5D0B600ACB538 /* Main[主体] */,
+				D95F71D41CF5D0B600ACB538 /* MyLottery[我的] */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D95F71B41CF5D0B600ACB538 /* Arena[竞技场] */ = {
+			isa = PBXGroup;
+			children = (
+				D95F71B51CF5D0B600ACB538 /* Controllers */,
+				D95F71B61CF5D0B600ACB538 /* Models */,
+				D95F71B71CF5D0B600ACB538 /* Others */,
+				D95F71B81CF5D0B600ACB538 /* Views */,
+			);
+			path = "Arena[竞技场]";
+			sourceTree = "<group>";
+		};
+		D95F71B51CF5D0B600ACB538 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D95F71B61CF5D0B600ACB538 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D95F71B71CF5D0B600ACB538 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		D95F71B81CF5D0B600ACB538 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D95F71B91CF5D0B600ACB538 /* Discovery[发现] */ = {
+			isa = PBXGroup;
+			children = (
+				D95F71BA1CF5D0B600ACB538 /* Controllers */,
+				D95F71BB1CF5D0B600ACB538 /* Models */,
+				D95F71BC1CF5D0B600ACB538 /* Others */,
+				D95F71BD1CF5D0B600ACB538 /* Views */,
+			);
+			path = "Discovery[发现]";
+			sourceTree = "<group>";
+		};
+		D95F71BA1CF5D0B600ACB538 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D95F71BB1CF5D0B600ACB538 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D95F71BC1CF5D0B600ACB538 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		D95F71BD1CF5D0B600ACB538 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D95F71BE1CF5D0B600ACB538 /* Guide[新特性] */ = {
+			isa = PBXGroup;
+			children = (
+				D95F71BF1CF5D0B600ACB538 /* Controllers */,
+				D95F71C01CF5D0B600ACB538 /* Models */,
+				D95F71C11CF5D0B600ACB538 /* Others */,
+				D95F71C21CF5D0B600ACB538 /* Views */,
+			);
+			path = "Guide[新特性]";
+			sourceTree = "<group>";
+		};
+		D95F71BF1CF5D0B600ACB538 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D95F71C01CF5D0B600ACB538 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D95F71C11CF5D0B600ACB538 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		D95F71C21CF5D0B600ACB538 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D95F71C31CF5D0B600ACB538 /* Hall[大厅] */ = {
+			isa = PBXGroup;
+			children = (
+				D95F71C41CF5D0B600ACB538 /* Controllers */,
+				D95F71C51CF5D0B600ACB538 /* Models */,
+				D95F71C61CF5D0B600ACB538 /* Others */,
+				D95F71C71CF5D0B600ACB538 /* Views */,
+			);
+			path = "Hall[大厅]";
+			sourceTree = "<group>";
+		};
+		D95F71C41CF5D0B600ACB538 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D95F71C51CF5D0B600ACB538 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D95F71C61CF5D0B600ACB538 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		D95F71C71CF5D0B600ACB538 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D95F71C81CF5D0B600ACB538 /* History[历史] */ = {
+			isa = PBXGroup;
+			children = (
+				D95F71C91CF5D0B600ACB538 /* Controllers */,
+				D95F71CA1CF5D0B600ACB538 /* Models */,
+				D95F71CB1CF5D0B600ACB538 /* Others */,
+				D95F71CC1CF5D0B600ACB538 /* Views */,
+			);
+			path = "History[历史]";
+			sourceTree = "<group>";
+		};
+		D95F71C91CF5D0B600ACB538 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D95F71CA1CF5D0B600ACB538 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D95F71CB1CF5D0B600ACB538 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		D95F71CC1CF5D0B600ACB538 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D95F71CD1CF5D0B600ACB538 /* Main[主体] */ = {
+			isa = PBXGroup;
+			children = (
+				D95F71CE1CF5D0B600ACB538 /* Controllers */,
+				D95F71CF1CF5D0B600ACB538 /* Models */,
+				D95F71D01CF5D0B600ACB538 /* Others */,
+				D95F71D31CF5D0B600ACB538 /* Views */,
+			);
+			path = "Main[主体]";
+			sourceTree = "<group>";
+		};
+		D95F71CE1CF5D0B600ACB538 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D95F71CF1CF5D0B600ACB538 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D95F71D01CF5D0B600ACB538 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				D95F71D11CF5D0B600ACB538 /* AppDelegate.h */,
+				D95F71D21CF5D0B600ACB538 /* AppDelegate.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		D95F71D31CF5D0B600ACB538 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D95F71D41CF5D0B600ACB538 /* MyLottery[我的] */ = {
+			isa = PBXGroup;
+			children = (
+				D95F71D51CF5D0B600ACB538 /* Controllers */,
+				D95F71D61CF5D0B600ACB538 /* Models */,
+				D95F71D71CF5D0B600ACB538 /* Others */,
+				D95F71D81CF5D0B600ACB538 /* Views */,
+			);
+			path = "MyLottery[我的]";
+			sourceTree = "<group>";
+		};
+		D95F71D51CF5D0B600ACB538 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D95F71D61CF5D0B600ACB538 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D95F71D71CF5D0B600ACB538 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		D95F71D81CF5D0B600ACB538 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D9D95CBB1CF5CCF700BCE8DD = {
 			isa = PBXGroup;
 			children = (
@@ -53,11 +342,7 @@
 		D9D95CC61CF5CCF700BCE8DD /* shczLottery */ = {
 			isa = PBXGroup;
 			children = (
-				D9D95CCA1CF5CCF700BCE8DD /* AppDelegate.h */,
-				D9D95CCB1CF5CCF700BCE8DD /* AppDelegate.m */,
-				D9D95CD31CF5CCF700BCE8DD /* Assets.xcassets */,
-				D9D95CD51CF5CCF700BCE8DD /* LaunchScreen.storyboard */,
-				D9D95CD81CF5CCF700BCE8DD /* Info.plist */,
+				D95F71B31CF5D0B600ACB538 /* Classes */,
 				D9D95CC71CF5CCF700BCE8DD /* Supporting Files */,
 			);
 			path = shczLottery;
@@ -66,6 +351,9 @@
 		D9D95CC71CF5CCF700BCE8DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D9D95CD31CF5CCF700BCE8DD /* Assets.xcassets */,
+				D9D95CD51CF5CCF700BCE8DD /* LaunchScreen.storyboard */,
+				D9D95CD81CF5CCF700BCE8DD /* Info.plist */,
 				D9D95CC81CF5CCF700BCE8DD /* main.m */,
 			);
 			name = "Supporting Files";
@@ -140,8 +428,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9D95CCC1CF5CCF700BCE8DD /* AppDelegate.m in Sources */,
 				D9D95CC91CF5CCF700BCE8DD /* main.m in Sources */,
+				D95F71D91CF5D0B600ACB538 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
