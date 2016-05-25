@@ -39,6 +39,19 @@
     
     // 4.添加
     [self.tabBar addSubview:bottomView];
+    
+    // MARK: - 2.遍历标签内部的子控制器，添加按钮
+    // 每遍历到一个控制器，就让bottomView添加一个按钮
+    // 1.遍历子控制器
+    [self.childViewControllers enumerateObjectsUsingBlock:^(__kindof UINavigationController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        // 1.拼接图片名称 普通和选中两个名称
+        NSString *norName = [NSString stringWithFormat:@"TabBar%@", @(idx + 1)];
+        NSString *selectName = [NSString stringWithFormat:@"TabBar%@Sel", @(idx + 1)];
+        
+        // 2.让bottomView去添加图片
+        [bottomView addButtonWithNormalImg:[UIImage imageNamed:norName] andSelectImg:[UIImage imageNamed:selectName]];
+    }];
 }
 
 #pragma mark - 1.添加子控制器

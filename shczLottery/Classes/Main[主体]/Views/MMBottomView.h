@@ -10,4 +10,7 @@
 
 @interface MMBottomView : UIView
 
+#pragma mark - 根据传入的两张图片，添加一个按钮
+- (void)addButtonWithNormalImg:(UIImage *)normalImg andSelectImg:(UIImage *)selectImg;
+
 @end
