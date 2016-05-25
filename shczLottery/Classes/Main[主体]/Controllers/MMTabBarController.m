@@ -9,7 +9,8 @@
 #import "MMTabBarController.h"
 #import "MMBottomView.h"
 
-@interface MMTabBarController ()
+// MARK: - 5.遵守协议
+@interface MMTabBarController () <MMBottomViewDelegate>
 
 @end
 
@@ -32,6 +33,9 @@
     // 1.创建
     MMBottomView *bottomView = [[MMBottomView alloc] init];
     
+    // MARK: - 4.设置代理
+    bottomView.delegate = self;
+    
     // 2.设置背景，验证
     bottomView.backgroundColor = MMRandomColor;
     // 3.设置尺寸位置信息
@@ -53,6 +57,15 @@
         [bottomView addButtonWithNormalImg:[UIImage imageNamed:norName] andSelectImg:[UIImage imageNamed:selectName]];
     }];
 }
+
+#pragma mark - bottomView的代理方法
+// MARK: - 6.实现协议方法
+- (void)bottomView:(MMBottomView *)bottomView didSelectIndex:(NSUInteger)selIdx {
+    
+    self.selectedIndex = selIdx;
+
+}
+
 
 #pragma mark - 1.添加子控制器
 - (void)setupChildVcs {

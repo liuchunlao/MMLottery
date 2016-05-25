@@ -50,6 +50,13 @@
     self.selectBtn = sender;
     
     // MARK: - 2.切换标签控制器的子控制器
+    // 通过代理，让标签控制器切换自己的选中索引，达到切换控制器的目的
+    // MARK: - 3.判断并让代理对象执行协议方法
+    if ([self.delegate respondsToSelector:@selector(bottomView:didSelectIndex:)]) {
+        
+        // indexOfObject: 方法的作用-> 返回某个元素在数组中的索引
+        [self.delegate bottomView:self didSelectIndex:[self.subviews indexOfObject:sender]];
+    }
 
     
     
