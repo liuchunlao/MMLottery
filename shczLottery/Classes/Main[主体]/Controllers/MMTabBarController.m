@@ -7,6 +7,7 @@
 //
 
 #import "MMTabBarController.h"
+#import "MMBottomView.h"
 
 @interface MMTabBarController ()
 
@@ -19,6 +20,25 @@
     
     // MARK: - 1.添加子控制器
     [self setupChildVcs];
+    
+    // MARK: - 2.添加底部的工具条视图
+    [self setupBottomView];
+}
+
+#pragma mark - 2.添加底部的工具条视图
+- (void)setupBottomView {
+
+    // MARK: - 1.创建并添加底部的工具条视图
+    // 1.创建
+    MMBottomView *bottomView = [[MMBottomView alloc] init];
+    
+    // 2.设置背景，验证
+    bottomView.backgroundColor = MMRandomColor;
+    // 3.设置尺寸位置信息
+    bottomView.frame = self.tabBar.bounds;
+    
+    // 4.添加
+    [self.tabBar addSubview:bottomView];
 }
 
 #pragma mark - 1.添加子控制器

@@ -14,6 +14,7 @@
 		D95F71E21CF5D37800ACB538 /* MMHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95F71E11CF5D37800ACB538 /* MMHistory.storyboard */; };
 		D95F71E41CF5D38300ACB538 /* MMMyLottery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95F71E31CF5D38300ACB538 /* MMMyLottery.storyboard */; };
 		D95F71E71CF5E54900ACB538 /* MMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D95F71E61CF5E54900ACB538 /* MMTabBarController.m */; };
+		D95F71EA1CF5E7B600ACB538 /* MMBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = D95F71E91CF5E7B600ACB538 /* MMBottomView.m */; };
 		D9D95CC91CF5CCF700BCE8DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D95CC81CF5CCF700BCE8DD /* main.m */; };
 		D9D95CD41CF5CCF700BCE8DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D95CD31CF5CCF700BCE8DD /* Assets.xcassets */; };
 		D9D95CD71CF5CCF700BCE8DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D95CD51CF5CCF700BCE8DD /* LaunchScreen.storyboard */; };
@@ -30,6 +31,8 @@
 		D95F71E31CF5D38300ACB538 /* MMMyLottery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MMMyLottery.storyboard; sourceTree = "<group>"; };
 		D95F71E51CF5E54900ACB538 /* MMTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTabBarController.h; sourceTree = "<group>"; };
 		D95F71E61CF5E54900ACB538 /* MMTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTabBarController.m; sourceTree = "<group>"; };
+		D95F71E81CF5E7B600ACB538 /* MMBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBottomView.h; sourceTree = "<group>"; };
+		D95F71E91CF5E7B600ACB538 /* MMBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBottomView.m; sourceTree = "<group>"; };
 		D9D95CC41CF5CCF700BCE8DD /* shczLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shczLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D95CC81CF5CCF700BCE8DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9D95CD31CF5CCF700BCE8DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -300,6 +303,8 @@
 		D95F71D31CF5D0B600ACB538 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D95F71E81CF5E7B600ACB538 /* MMBottomView.h */,
+				D95F71E91CF5E7B600ACB538 /* MMBottomView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -459,6 +464,7 @@
 				D9D95CC91CF5CCF700BCE8DD /* main.m in Sources */,
 				D95F71E71CF5E54900ACB538 /* MMTabBarController.m in Sources */,
 				D95F71D91CF5D0B600ACB538 /* AppDelegate.m in Sources */,
+				D95F71EA1CF5E7B600ACB538 /* MMBottomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
