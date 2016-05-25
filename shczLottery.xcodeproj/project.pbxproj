@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D95F71D91CF5D0B600ACB538 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D95F71D21CF5D0B600ACB538 /* AppDelegate.m */; };
+		D95F71DC1CF5D34F00ACB538 /* MMHall.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95F71DB1CF5D34F00ACB538 /* MMHall.storyboard */; };
+		D95F71DE1CF5D35C00ACB538 /* MMArena.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95F71DD1CF5D35C00ACB538 /* MMArena.storyboard */; };
+		D95F71E01CF5D36C00ACB538 /* MMDiscovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95F71DF1CF5D36C00ACB538 /* MMDiscovery.storyboard */; };
+		D95F71E21CF5D37800ACB538 /* MMHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95F71E11CF5D37800ACB538 /* MMHistory.storyboard */; };
+		D95F71E41CF5D38300ACB538 /* MMMyLottery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95F71E31CF5D38300ACB538 /* MMMyLottery.storyboard */; };
 		D9D95CC91CF5CCF700BCE8DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D95CC81CF5CCF700BCE8DD /* main.m */; };
 		D9D95CD41CF5CCF700BCE8DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D95CD31CF5CCF700BCE8DD /* Assets.xcassets */; };
 		D9D95CD71CF5CCF700BCE8DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D95CD51CF5CCF700BCE8DD /* LaunchScreen.storyboard */; };
@@ -17,6 +22,11 @@
 		D95F71D11CF5D0B600ACB538 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D95F71D21CF5D0B600ACB538 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D95F71DA1CF5D1C600ACB538 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D95F71DB1CF5D34F00ACB538 /* MMHall.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MMHall.storyboard; sourceTree = "<group>"; };
+		D95F71DD1CF5D35C00ACB538 /* MMArena.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MMArena.storyboard; sourceTree = "<group>"; };
+		D95F71DF1CF5D36C00ACB538 /* MMDiscovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MMDiscovery.storyboard; sourceTree = "<group>"; };
+		D95F71E11CF5D37800ACB538 /* MMHistory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MMHistory.storyboard; sourceTree = "<group>"; };
+		D95F71E31CF5D38300ACB538 /* MMMyLottery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MMMyLottery.storyboard; sourceTree = "<group>"; };
 		D9D95CC41CF5CCF700BCE8DD /* shczLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shczLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D95CC81CF5CCF700BCE8DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9D95CD31CF5CCF700BCE8DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,13 +48,13 @@
 		D95F71B31CF5D0B600ACB538 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D95F71CD1CF5D0B600ACB538 /* Main[主体] */,
+				D95F71C31CF5D0B600ACB538 /* Hall[大厅] */,
 				D95F71B41CF5D0B600ACB538 /* Arena[竞技场] */,
 				D95F71B91CF5D0B600ACB538 /* Discovery[发现] */,
-				D95F71BE1CF5D0B600ACB538 /* Guide[新特性] */,
-				D95F71C31CF5D0B600ACB538 /* Hall[大厅] */,
 				D95F71C81CF5D0B600ACB538 /* History[历史] */,
-				D95F71CD1CF5D0B600ACB538 /* Main[主体] */,
 				D95F71D41CF5D0B600ACB538 /* MyLottery[我的] */,
+				D95F71BE1CF5D0B600ACB538 /* Guide[新特性] */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -63,6 +73,7 @@
 		D95F71B51CF5D0B600ACB538 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D95F71DD1CF5D35C00ACB538 /* MMArena.storyboard */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -102,6 +113,7 @@
 		D95F71BA1CF5D0B600ACB538 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D95F71DF1CF5D36C00ACB538 /* MMDiscovery.storyboard */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,6 +192,7 @@
 		D95F71C41CF5D0B600ACB538 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D95F71DB1CF5D34F00ACB538 /* MMHall.storyboard */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -219,6 +232,7 @@
 		D95F71C91CF5D0B600ACB538 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D95F71E11CF5D37800ACB538 /* MMHistory.storyboard */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -299,6 +313,7 @@
 		D95F71D51CF5D0B600ACB538 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D95F71E31CF5D38300ACB538 /* MMMyLottery.storyboard */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -387,6 +402,7 @@
 		D9D95CBC1CF5CCF700BCE8DD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MM;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = liuchunlao;
 				TargetAttributes = {
@@ -420,6 +436,11 @@
 			files = (
 				D9D95CD71CF5CCF700BCE8DD /* LaunchScreen.storyboard in Resources */,
 				D9D95CD41CF5CCF700BCE8DD /* Assets.xcassets in Resources */,
+				D95F71DE1CF5D35C00ACB538 /* MMArena.storyboard in Resources */,
+				D95F71E41CF5D38300ACB538 /* MMMyLottery.storyboard in Resources */,
+				D95F71DC1CF5D34F00ACB538 /* MMHall.storyboard in Resources */,
+				D95F71E01CF5D36C00ACB538 /* MMDiscovery.storyboard in Resources */,
+				D95F71E21CF5D37800ACB538 /* MMHistory.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
