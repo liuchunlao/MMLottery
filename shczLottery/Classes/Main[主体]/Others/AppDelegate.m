@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MMTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -22,25 +23,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     // 2.1 创建标签控制器
-    UITabBarController *tabBarVc = [[UITabBarController alloc] init];
-    
-    // 2.2 加载标签控制器的子控制器
-    // 大厅
-    UINavigationController *navHall = [self navWithStoryboardName:@"MMHall"];
-    
-    // 竞技场
-    UINavigationController *navArena = [self navWithStoryboardName:@"MMArena"];
-    
-    // 发现
-    UINavigationController *navDiscovery = [self navWithStoryboardName:@"MMDiscovery"];
-    
-    // 历史信息
-    UINavigationController *navHistory = [self navWithStoryboardName:@"MMHistory"];
-    
-    // 我的彩票
-    UINavigationController *navMyLottery = [self navWithStoryboardName:@"MMMyLottery"];
-    
-    tabBarVc.viewControllers = @[navHall, navArena, navDiscovery, navHistory, navMyLottery];
+    MMTabBarController *tabBarVc = [[MMTabBarController alloc] init];
     
     // 3.将标签vc设置为窗口的子控制器
     self.window.rootViewController = tabBarVc;
@@ -52,22 +35,7 @@
     return YES;
 }
 
-#pragma mark - 根据传入的故事板文件，创建并返回对应的导航控制器
-- (UINavigationController *)navWithStoryboardName:(NSString *)storyboardName {
-    
-    // 1.根据名称加载故事板文件
-    UIStoryboard *board = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
-    
-    // 2.实例化文件中的初始化控制器【即带箭头的导航控制器】
-    UINavigationController *nav = [board instantiateInitialViewController];
-    
-    // 2.2 设置随机色验证控制器的界面显示
-    nav.topViewController.view.backgroundColor = MMRandomColor;
-    
-    // 3.返回
-    return nav;
-    
-}
+
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
