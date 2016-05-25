@@ -33,6 +33,21 @@
     [super layoutSubviews];
     MMLog(@"%@", @(self.subviews.count));
     
+    // MARK: - 1.遍历所有的子控件，并且进行布局
+    // 1.将最容易确定的内容，放置在循环外面计算
+    CGFloat btnW = self.bounds.size.width / self.subviews.count;
+    CGFloat btnH = self.bounds.size.height;
+    
+    CGFloat btnY = 0;
+    
+    // 2.遍历，计算x值
+    [self.subviews enumerateObjectsUsingBlock:^(__kindof UIButton * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        CGFloat btnX = idx * btnW;
+        obj.frame = CGRectMake(btnX, btnY, btnW, btnH);
+        
+    }];
+    
     
 }
 
