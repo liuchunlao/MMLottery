@@ -61,6 +61,9 @@
     // 2.实例化文件中的初始化控制器【即带箭头的导航控制器】
     UINavigationController *nav = [board instantiateInitialViewController];
     
+    // 2.2 设置随机色验证控制器的界面显示
+    nav.topViewController.view.backgroundColor = MMRandomColor;
+    
     // 3.返回
     return nav;
     

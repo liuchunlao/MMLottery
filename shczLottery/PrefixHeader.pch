@@ -9,7 +9,25 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+// 屏蔽c语言文件的宏
+#ifdef __OBJC__
+
+// 打印的宏
+#ifdef DEBUG
+
+#define MMLog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define MMLog(...)
+
+#endif
+
+
+// 随机色的宏
+#define MMRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+
+
+#endif
 
 #endif /* PrefixHeader_pch */
