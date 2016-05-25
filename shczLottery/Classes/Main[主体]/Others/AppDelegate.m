@@ -32,6 +32,14 @@
     [self.window makeKeyAndVisible];
     
     
+    // MARK: - 2.设置状态栏的显示效果
+    // 1.显示白色效果
+    application.statusBarStyle = UIStatusBarStyleLightContent;
+    // 2.不要隐藏！
+    application.statusBarHidden = NO;
+    
+    
+    
     return YES;
 }
 
