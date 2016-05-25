@@ -16,7 +16,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // MARK: - 1.加载自定义控制器
+    // 1.创建窗口
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    // 2.创建标签控制器
+    UITabBarController *tabBarVc = [[UITabBarController alloc] init];
+    
+    // 3.将标签vc设置为窗口的子控制器
+    self.window.rootViewController = tabBarVc;
+    
+    // 4.将窗口设置为主窗口并可见
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
