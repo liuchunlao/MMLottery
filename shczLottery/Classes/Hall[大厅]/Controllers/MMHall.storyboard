@@ -8,7 +8,7 @@
         <!--购彩大厅-->
         <scene sceneID="Chd-Lv-cHM">
             <objects>
-                <viewController id="zD1-Be-K0k" sceneMemberID="viewController">
+                <viewController id="zD1-Be-K0k" customClass="MMHallController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lLC-6U-cqm"/>
                         <viewControllerLayoutGuide type="bottom" id="oet-HS-SoN"/>
@@ -18,7 +18,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="购彩大厅" id="ilX-kg-SJr"/>
+                    <navigationItem key="navigationItem" title="购彩大厅" id="ilX-kg-SJr">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="WkD-4H-3PN">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="qM8-ck-cou">
+                                <rect key="frame" x="20" y="4" width="63" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="CS50_activity_image"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t5E-GF-HHJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,4 +51,7 @@
             <point key="canvasLocation" x="531" y="370"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CS50_activity_image" width="63" height="36"/>
+    </resources>
 </document>
