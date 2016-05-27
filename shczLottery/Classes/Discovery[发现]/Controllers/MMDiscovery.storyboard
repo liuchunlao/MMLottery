@@ -215,7 +215,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Khq-dI-Yl0">
                         <nil key="title"/>
-                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9ff-d1-IWZ">
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9ff-d1-IWZ" customClass="MMGroupBuyButton">
                             <rect key="frame" x="256" y="11" width="88" height="22"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="全部彩种" image="YellowDownArrow"/>

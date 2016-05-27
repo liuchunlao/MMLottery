@@ -23,6 +23,7 @@
 		D9D95CD41CF5CCF700BCE8DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D95CD31CF5CCF700BCE8DD /* Assets.xcassets */; };
 		D9D95CD71CF5CCF700BCE8DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D95CD51CF5CCF700BCE8DD /* LaunchScreen.storyboard */; };
 		D9F1223E1CF82C2700196BE2 /* MMArenaController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F1223D1CF82C2700196BE2 /* MMArenaController.m */; };
+		D9F122411CF8385400196BE2 /* MMGroupBuyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F122401CF8385400196BE2 /* MMGroupBuyButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,8 @@
 		D9D95CD81CF5CCF700BCE8DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9F1223C1CF82C2700196BE2 /* MMArenaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMArenaController.h; sourceTree = "<group>"; };
 		D9F1223D1CF82C2700196BE2 /* MMArenaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMArenaController.m; sourceTree = "<group>"; };
+		D9F1223F1CF8385400196BE2 /* MMGroupBuyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGroupBuyButton.h; sourceTree = "<group>"; };
+		D9F122401CF8385400196BE2 /* MMGroupBuyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGroupBuyButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				D95F71DF1CF5D36C00ACB538 /* MMDiscovery.storyboard */,
+				D9F1223F1CF8385400196BE2 /* MMGroupBuyButton.h */,
+				D9F122401CF8385400196BE2 /* MMGroupBuyButton.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -498,6 +503,7 @@
 				D95F71F31CF5FE5C00ACB538 /* MMHallController.m in Sources */,
 				D9D95CC91CF5CCF700BCE8DD /* main.m in Sources */,
 				D9F1223E1CF82C2700196BE2 /* MMArenaController.m in Sources */,
+				D9F122411CF8385400196BE2 /* MMGroupBuyButton.m in Sources */,
 				D95F71ED1CF5F4B800ACB538 /* MMNavigationController.m in Sources */,
 				D95F71F71CF6003100ACB538 /* UIView+MDRExtension.m in Sources */,
 				D95F71E71CF5E54900ACB538 /* MMTabBarController.m in Sources */,
