@@ -213,12 +213,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Khq-dI-Yl0">
+                        <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9ff-d1-IWZ">
+                            <rect key="frame" x="256" y="11" width="88" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="全部彩种" image="YellowDownArrow"/>
+                        </button>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ZV-8G-Tj2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="945" y="-100"/>
         </scene>
-        <!--View Controller-->
+        <!--幸运选号-->
         <scene sceneID="FBd-dw-wMF">
             <objects>
                 <viewController id="gtJ-1s-vTr" sceneMemberID="viewController">
@@ -231,6 +239,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="幸运选号" id="5lh-do-aAY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tsz-q3-jPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -254,6 +263,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="YellowDownArrow" width="16" height="16"/>
         <image name="discovery_groupBuy_icon" width="113" height="67"/>
         <image name="discovery_groupBuy_title" width="54" height="23"/>
         <image name="discovery_joySquare_icon" width="110" height="70"/>
