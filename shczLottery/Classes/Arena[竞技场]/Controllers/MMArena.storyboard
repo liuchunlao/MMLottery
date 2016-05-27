@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Arena Controller-->
         <scene sceneID="szY-gr-GEy">
             <objects>
-                <viewController id="YGP-nr-mfB" sceneMemberID="viewController">
+                <viewController id="YGP-nr-mfB" customClass="MMArenaController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lj4-M4-0Jm"/>
                         <viewControllerLayoutGuide type="bottom" id="3yQ-a4-NOd"/>
@@ -29,6 +29,9 @@
                             </segments>
                         </segmentedControl>
                     </navigationItem>
+                    <connections>
+                        <outlet property="segment" destination="ZIO-6m-MTE" id="Uj5-EB-X0v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u0O-sb-nYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
