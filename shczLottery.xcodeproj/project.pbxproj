@@ -24,6 +24,7 @@
 		D9D95CD71CF5CCF700BCE8DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D95CD51CF5CCF700BCE8DD /* LaunchScreen.storyboard */; };
 		D9F1223E1CF82C2700196BE2 /* MMArenaController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F1223D1CF82C2700196BE2 /* MMArenaController.m */; };
 		D9F122411CF8385400196BE2 /* MMGroupBuyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F122401CF8385400196BE2 /* MMGroupBuyButton.m */; };
+		D9F122441CF8392F00196BE2 /* MMGroupBuyController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F122431CF8392F00196BE2 /* MMGroupBuyController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,8 @@
 		D9F1223D1CF82C2700196BE2 /* MMArenaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMArenaController.m; sourceTree = "<group>"; };
 		D9F1223F1CF8385400196BE2 /* MMGroupBuyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGroupBuyButton.h; sourceTree = "<group>"; };
 		D9F122401CF8385400196BE2 /* MMGroupBuyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGroupBuyButton.m; sourceTree = "<group>"; };
+		D9F122421CF8392F00196BE2 /* MMGroupBuyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGroupBuyController.h; sourceTree = "<group>"; };
+		D9F122431CF8392F00196BE2 /* MMGroupBuyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGroupBuyController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,8 @@
 				D95F71DF1CF5D36C00ACB538 /* MMDiscovery.storyboard */,
 				D9F1223F1CF8385400196BE2 /* MMGroupBuyButton.h */,
 				D9F122401CF8385400196BE2 /* MMGroupBuyButton.m */,
+				D9F122421CF8392F00196BE2 /* MMGroupBuyController.h */,
+				D9F122431CF8392F00196BE2 /* MMGroupBuyController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -505,6 +510,7 @@
 				D9F1223E1CF82C2700196BE2 /* MMArenaController.m in Sources */,
 				D9F122411CF8385400196BE2 /* MMGroupBuyButton.m in Sources */,
 				D95F71ED1CF5F4B800ACB538 /* MMNavigationController.m in Sources */,
+				D9F122441CF8392F00196BE2 /* MMGroupBuyController.m in Sources */,
 				D95F71F71CF6003100ACB538 /* UIView+MDRExtension.m in Sources */,
 				D95F71E71CF5E54900ACB538 /* MMTabBarController.m in Sources */,
 				D95F71D91CF5D0B600ACB538 /* AppDelegate.m in Sources */,

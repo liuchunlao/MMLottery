@@ -200,10 +200,10 @@
             </objects>
             <point key="canvasLocation" x="13" y="437"/>
         </scene>
-        <!--View Controller-->
+        <!--Group Buy Controller-->
         <scene sceneID="Bkn-aH-WqX">
             <objects>
-                <viewController id="0ES-HD-J4b" sceneMemberID="viewController">
+                <viewController id="0ES-HD-J4b" customClass="MMGroupBuyController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k7m-kg-mpI"/>
                         <viewControllerLayoutGuide type="bottom" id="YMy-1K-ckr"/>
@@ -219,6 +219,9 @@
                             <rect key="frame" x="256" y="11" width="88" height="22"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="全部彩种" image="YellowDownArrow"/>
+                            <connections>
+                                <action selector="groupBuyButtonClick:" destination="0ES-HD-J4b" eventType="touchUpInside" id="V96-AI-mxd"/>
+                            </connections>
                         </button>
                     </navigationItem>
                 </viewController>
