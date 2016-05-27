@@ -18,7 +18,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="开奖信息" id="KNl-G6-gaB"/>
+                    <navigationItem key="navigationItem" title="开奖信息" id="KNl-G6-gaB">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="TA3-Jx-vQj">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="prp-kK-Sgx">
+                                <rect key="frame" x="494" y="11" width="86" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="开奖推送" image="pushSettings"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="seb-7z-I46" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,4 +51,7 @@
             <point key="canvasLocation" x="391" y="410"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pushSettings" width="14" height="13"/>
+    </resources>
 </document>
