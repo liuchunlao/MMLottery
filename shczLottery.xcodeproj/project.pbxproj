@@ -25,6 +25,7 @@
 		D9F1223E1CF82C2700196BE2 /* MMArenaController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F1223D1CF82C2700196BE2 /* MMArenaController.m */; };
 		D9F122411CF8385400196BE2 /* MMGroupBuyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F122401CF8385400196BE2 /* MMGroupBuyButton.m */; };
 		D9F122441CF8392F00196BE2 /* MMGroupBuyController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F122431CF8392F00196BE2 /* MMGroupBuyController.m */; };
+		D9F122471CF83D9300196BE2 /* MMLuckyNumberController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F122461CF83D9300196BE2 /* MMLuckyNumberController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,8 @@
 		D9F122401CF8385400196BE2 /* MMGroupBuyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGroupBuyButton.m; sourceTree = "<group>"; };
 		D9F122421CF8392F00196BE2 /* MMGroupBuyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGroupBuyController.h; sourceTree = "<group>"; };
 		D9F122431CF8392F00196BE2 /* MMGroupBuyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGroupBuyController.m; sourceTree = "<group>"; };
+		D9F122451CF83D9300196BE2 /* MMLuckyNumberController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMLuckyNumberController.h; sourceTree = "<group>"; };
+		D9F122461CF83D9300196BE2 /* MMLuckyNumberController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLuckyNumberController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,8 @@
 				D9F122401CF8385400196BE2 /* MMGroupBuyButton.m */,
 				D9F122421CF8392F00196BE2 /* MMGroupBuyController.h */,
 				D9F122431CF8392F00196BE2 /* MMGroupBuyController.m */,
+				D9F122451CF83D9300196BE2 /* MMLuckyNumberController.h */,
+				D9F122461CF83D9300196BE2 /* MMLuckyNumberController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -507,6 +512,7 @@
 				D95F71F01CF5F56600ACB538 /* MMBottomButton.m in Sources */,
 				D95F71F31CF5FE5C00ACB538 /* MMHallController.m in Sources */,
 				D9D95CC91CF5CCF700BCE8DD /* main.m in Sources */,
+				D9F122471CF83D9300196BE2 /* MMLuckyNumberController.m in Sources */,
 				D9F1223E1CF82C2700196BE2 /* MMArenaController.m in Sources */,
 				D9F122411CF8385400196BE2 /* MMGroupBuyButton.m in Sources */,
 				D95F71ED1CF5F4B800ACB538 /* MMNavigationController.m in Sources */,
