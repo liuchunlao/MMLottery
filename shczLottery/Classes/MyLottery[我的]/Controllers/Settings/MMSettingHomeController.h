@@ -10,4 +10,7 @@
 
 @interface MMSettingHomeController : UITableViewController
 
+/** 要加载的plist文件名称 */
+@property (nonatomic, copy) NSString *plistName;
+
 @end

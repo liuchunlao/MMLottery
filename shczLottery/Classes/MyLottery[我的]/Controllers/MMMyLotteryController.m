@@ -52,6 +52,9 @@
     // 1.2 设置标题
     settingHomeVc.navigationItem.title = @"设置";
     
+    // 1.3 设置要加载的plist文件名称
+    settingHomeVc.plistName = @"MMSettingHome";
+    
     // 2.跳转
     [self.navigationController pushViewController:settingHomeVc animated:YES];
 }

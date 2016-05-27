@@ -28,6 +28,7 @@
 		D9F122471CF83D9300196BE2 /* MMLuckyNumberController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F122461CF83D9300196BE2 /* MMLuckyNumberController.m */; };
 		D9F1224A1CF8450500196BE2 /* MMMyLotteryController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F122491CF8450500196BE2 /* MMMyLotteryController.m */; };
 		D9F1224E1CF8636F00196BE2 /* MMSettingHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F1224D1CF8636F00196BE2 /* MMSettingHomeController.m */; };
+		D9F122511CF865E700196BE2 /* MMSettingHome.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9F122501CF865E700196BE2 /* MMSettingHome.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		D9F122491CF8450500196BE2 /* MMMyLotteryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMyLotteryController.m; sourceTree = "<group>"; };
 		D9F1224C1CF8636F00196BE2 /* MMSettingHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSettingHomeController.h; sourceTree = "<group>"; };
 		D9F1224D1CF8636F00196BE2 /* MMSettingHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSettingHomeController.m; sourceTree = "<group>"; };
+		D9F122501CF865E700196BE2 /* MMSettingHome.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MMSettingHome.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -434,6 +436,7 @@
 		D9D95CC71CF5CCF700BCE8DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D9F1224F1CF865BF00196BE2 /* SettingPlist */,
 				D9D95CD31CF5CCF700BCE8DD /* Assets.xcassets */,
 				D9D95CD51CF5CCF700BCE8DD /* LaunchScreen.storyboard */,
 				D9D95CD81CF5CCF700BCE8DD /* Info.plist */,
@@ -450,6 +453,14 @@
 				D9F1224D1CF8636F00196BE2 /* MMSettingHomeController.m */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		D9F1224F1CF865BF00196BE2 /* SettingPlist */ = {
+			isa = PBXGroup;
+			children = (
+				D9F122501CF865E700196BE2 /* MMSettingHome.plist */,
+			);
+			path = SettingPlist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,6 +527,7 @@
 				D95F71E41CF5D38300ACB538 /* MMMyLottery.storyboard in Resources */,
 				D95F71DC1CF5D34F00ACB538 /* MMHall.storyboard in Resources */,
 				D95F71E01CF5D36C00ACB538 /* MMDiscovery.storyboard in Resources */,
+				D9F122511CF865E700196BE2 /* MMSettingHome.plist in Resources */,
 				D95F71E21CF5D37800ACB538 /* MMHistory.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
