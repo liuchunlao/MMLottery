@@ -33,6 +33,9 @@
     [navBar setTitleTextAttributes:@{
                                      NSForegroundColorAttributeName : [UIColor whiteColor]
                                      }];
+    
+    // 4.设置两侧item的显示效果
+    [navBar setTintColor:[UIColor whiteColor]];
 }
 
 
@@ -52,6 +55,26 @@
 //    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
     
 }
+
+#pragma mark - 重写此方法拦截系统默认的push操作
+/**
+ 统一设置底部工具条在push的时候隐藏起来！
+ */
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+
+    /**
+     判断的原因：
+        - 在storyboard拖线设置根控制器的时候，第一次显示不会调用push方法
+        - 在纯代码创建控制器时，alloc + initWithRootViewController: 会调用一次这个方法！
+     */
+    if (self.viewControllers.count > 0) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    
+    // 系统的push操作照做
+    [super pushViewController:viewController animated:animated];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
