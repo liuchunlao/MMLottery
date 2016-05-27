@@ -16,9 +16,49 @@
                     <view key="view" contentMode="scaleToFill" id="0Kw-84-14f">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="LoginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="kRn-DX-TpW">
+                                <rect key="frame" x="152" y="94" width="296" height="138"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网易邮箱或账号可以直接登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xD-FS-g8O">
+                                <rect key="frame" x="189" y="247" width="221" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoa-TF-Eg6">
+                                <rect key="frame" x="20" y="298" width="560" height="30"/>
+                                <state key="normal" title="登      录"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKh-9q-D5a">
+                                <rect key="frame" x="20" y="353" width="560" height="30"/>
+                                <state key="normal" title="注      册"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0xD-FS-g8O" firstAttribute="top" secondItem="kRn-DX-TpW" secondAttribute="bottom" constant="15" id="3sc-re-LxF"/>
+                            <constraint firstItem="uoa-TF-Eg6" firstAttribute="top" secondItem="0xD-FS-g8O" secondAttribute="bottom" constant="30" id="CAg-63-neE"/>
+                            <constraint firstItem="qKh-9q-D5a" firstAttribute="top" secondItem="uoa-TF-Eg6" secondAttribute="bottom" constant="25" id="FWR-Ig-sJ6"/>
+                            <constraint firstItem="uoa-TF-Eg6" firstAttribute="leading" secondItem="0Kw-84-14f" secondAttribute="leading" constant="20" id="NxS-hZ-fmK"/>
+                            <constraint firstItem="kRn-DX-TpW" firstAttribute="centerX" secondItem="0Kw-84-14f" secondAttribute="centerX" id="Ssg-zX-zZu"/>
+                            <constraint firstItem="kRn-DX-TpW" firstAttribute="top" secondItem="eFx-D4-WQ4" secondAttribute="bottom" constant="30" id="Uyz-8a-l3t"/>
+                            <constraint firstItem="qKh-9q-D5a" firstAttribute="trailing" secondItem="uoa-TF-Eg6" secondAttribute="trailing" id="ibE-Fa-eJf"/>
+                            <constraint firstItem="0xD-FS-g8O" firstAttribute="centerX" secondItem="0Kw-84-14f" secondAttribute="centerX" id="seV-cg-azQ"/>
+                            <constraint firstAttribute="trailing" secondItem="uoa-TF-Eg6" secondAttribute="trailing" constant="20" id="yrx-WH-xiK"/>
+                            <constraint firstItem="qKh-9q-D5a" firstAttribute="leading" secondItem="uoa-TF-Eg6" secondAttribute="leading" id="zI6-Hu-dqN"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="我的彩票" id="lBh-mJ-Lec"/>
+                    <navigationItem key="navigationItem" title="我的彩票" id="lBh-mJ-Lec">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="JII-lt-OaT">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vzb-TF-6Bh">
+                                <rect key="frame" x="20" y="11" width="49" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="客服" image="FBMM_Barbutton"/>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="Mylottery_config" id="SpH-Nk-mxR"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehw-wD-YJk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,4 +83,9 @@
             <point key="canvasLocation" x="429" y="469"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FBMM_Barbutton" width="13" height="13"/>
+        <image name="LoginScreen" width="296" height="138"/>
+        <image name="Mylottery_config" width="22" height="22"/>
+    </resources>
 </document>

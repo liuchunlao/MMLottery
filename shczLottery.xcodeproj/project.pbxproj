@@ -26,6 +26,7 @@
 		D9F122411CF8385400196BE2 /* MMGroupBuyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F122401CF8385400196BE2 /* MMGroupBuyButton.m */; };
 		D9F122441CF8392F00196BE2 /* MMGroupBuyController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F122431CF8392F00196BE2 /* MMGroupBuyController.m */; };
 		D9F122471CF83D9300196BE2 /* MMLuckyNumberController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F122461CF83D9300196BE2 /* MMLuckyNumberController.m */; };
+		D9F1224A1CF8450500196BE2 /* MMMyLotteryController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F122491CF8450500196BE2 /* MMMyLotteryController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,8 @@
 		D9F122431CF8392F00196BE2 /* MMGroupBuyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGroupBuyController.m; sourceTree = "<group>"; };
 		D9F122451CF83D9300196BE2 /* MMLuckyNumberController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMLuckyNumberController.h; sourceTree = "<group>"; };
 		D9F122461CF83D9300196BE2 /* MMLuckyNumberController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLuckyNumberController.m; sourceTree = "<group>"; };
+		D9F122481CF8450500196BE2 /* MMMyLotteryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMyLotteryController.h; sourceTree = "<group>"; };
+		D9F122491CF8450500196BE2 /* MMMyLotteryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMyLotteryController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -363,6 +366,8 @@
 			isa = PBXGroup;
 			children = (
 				D95F71E31CF5D38300ACB538 /* MMMyLottery.storyboard */,
+				D9F122481CF8450500196BE2 /* MMMyLotteryController.h */,
+				D9F122491CF8450500196BE2 /* MMMyLotteryController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -520,6 +525,7 @@
 				D95F71F71CF6003100ACB538 /* UIView+MDRExtension.m in Sources */,
 				D95F71E71CF5E54900ACB538 /* MMTabBarController.m in Sources */,
 				D95F71D91CF5D0B600ACB538 /* AppDelegate.m in Sources */,
+				D9F1224A1CF8450500196BE2 /* MMMyLotteryController.m in Sources */,
 				D95F71EA1CF5E7B600ACB538 /* MMBottomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
