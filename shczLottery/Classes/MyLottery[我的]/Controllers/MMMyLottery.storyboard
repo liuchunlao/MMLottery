@@ -57,7 +57,11 @@
                                 <state key="normal" title="客服" image="FBMM_Barbutton"/>
                             </button>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="Mylottery_config" id="SpH-Nk-mxR"/>
+                        <barButtonItem key="rightBarButtonItem" image="Mylottery_config" id="SpH-Nk-mxR">
+                            <connections>
+                                <action selector="go2SettingVc:" destination="Oz5-ao-49A" id="PAj-z4-Ysu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="loginBtn" destination="uoa-TF-Eg6" id="Ltk-3V-G9V"/>

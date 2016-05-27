@@ -27,6 +27,7 @@
 		D9F122441CF8392F00196BE2 /* MMGroupBuyController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F122431CF8392F00196BE2 /* MMGroupBuyController.m */; };
 		D9F122471CF83D9300196BE2 /* MMLuckyNumberController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F122461CF83D9300196BE2 /* MMLuckyNumberController.m */; };
 		D9F1224A1CF8450500196BE2 /* MMMyLotteryController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F122491CF8450500196BE2 /* MMMyLotteryController.m */; };
+		D9F1224E1CF8636F00196BE2 /* MMSettingHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F1224D1CF8636F00196BE2 /* MMSettingHomeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,8 @@
 		D9F122461CF83D9300196BE2 /* MMLuckyNumberController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLuckyNumberController.m; sourceTree = "<group>"; };
 		D9F122481CF8450500196BE2 /* MMMyLotteryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMyLotteryController.h; sourceTree = "<group>"; };
 		D9F122491CF8450500196BE2 /* MMMyLotteryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMyLotteryController.m; sourceTree = "<group>"; };
+		D9F1224C1CF8636F00196BE2 /* MMSettingHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSettingHomeController.h; sourceTree = "<group>"; };
+		D9F1224D1CF8636F00196BE2 /* MMSettingHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSettingHomeController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,6 +368,7 @@
 		D95F71D51CF5D0B600ACB538 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D9F1224B1CF8635B00196BE2 /* Settings */,
 				D95F71E31CF5D38300ACB538 /* MMMyLottery.storyboard */,
 				D9F122481CF8450500196BE2 /* MMMyLotteryController.h */,
 				D9F122491CF8450500196BE2 /* MMMyLotteryController.m */,
@@ -437,6 +441,15 @@
 				D95F71DA1CF5D1C600ACB538 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9F1224B1CF8635B00196BE2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D9F1224C1CF8636F00196BE2 /* MMSettingHomeController.h */,
+				D9F1224D1CF8636F00196BE2 /* MMSettingHomeController.m */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -527,6 +540,7 @@
 				D95F71D91CF5D0B600ACB538 /* AppDelegate.m in Sources */,
 				D9F1224A1CF8450500196BE2 /* MMMyLotteryController.m in Sources */,
 				D95F71EA1CF5E7B600ACB538 /* MMBottomView.m in Sources */,
+				D9F1224E1CF8636F00196BE2 /* MMSettingHomeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

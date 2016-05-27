@@ -7,6 +7,7 @@
 //
 
 #import "MMMyLotteryController.h"
+#import "MMSettingHomeController.h"
 
 @interface MMMyLotteryController ()
 
@@ -39,6 +40,20 @@
 - (UIImage *)stretchImage:(UIImage *)originalImg {
     
     return [originalImg stretchableImageWithLeftCapWidth:originalImg.size.width * 0.5 topCapHeight:originalImg.size.height * 0.5];
+}
+
+#pragma mark - 点击右侧的configItem的时候调用
+- (IBAction)go2SettingVc:(id)sender {
+
+    // MARK: - 1.跳转到设置控制器
+    // 1.创建对象
+    MMSettingHomeController *settingHomeVc = [[MMSettingHomeController alloc] init];
+    
+    // 1.2 设置标题
+    settingHomeVc.navigationItem.title = @"设置";
+    
+    // 2.跳转
+    [self.navigationController pushViewController:settingHomeVc animated:YES];
 }
 
 @end
